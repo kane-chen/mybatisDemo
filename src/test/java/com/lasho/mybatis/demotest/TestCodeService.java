@@ -26,8 +26,8 @@ import com.lasho.mybatis.service.CodeService;
  * @Date    <2014年1月6日>
  * @description 
  */
-//@RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration(locations = "classpath:applicationContext.xml")
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:applicationContext_test.xml")
 public class TestCodeService extends TestBase {
 
     @Autowired
