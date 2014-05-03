@@ -19,7 +19,7 @@
      http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 
 	<!-- auto-wired -->
-	<context:component-scan base-package="com.lasho.mybatis" />
+	<context:component-scan base-package="cn.kane.mybatis" />
 	
 	<context:annotation-config />
 	
@@ -54,22 +54,22 @@
 	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<!-- relative-path -->
-		<property name="typeAliasesPackage" value="com.lasho.mybatis.domain" />
+		<property name="typeAliasesPackage" value="cn.kane.mybatis.domain" />
 		<!-- mapper.xml locations -->
-		<property name="mapperLocations" value="classpath*:com/lasho/mybatis/xmlmapper/*.xml"/>
+		<property name="mapperLocations" value="classpath*:cn/kane/mybatis/xmlmapper/*.xml"/>
 	</bean>
 
 	<!-- scan for mappers and let them be autowired -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- interface-package[ if xml&interface in the same path ,mapperLocations could not set] -->
-		<property name="basePackage" value="com.lasho.mybatis.mapper" /> 
+		<property name="basePackage" value="cn.kane.mybatis.mapper" /> 
 		<!-- many sqlSessionFactory -->
 		<property name="sqlSessionFactoryBeanName" value="sessionFactory" />
 	</bean>
 	
 	<!-- special-mapper-proxy -->
 	<!-- <bean id="codeMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
-      <property name="mapperInterface" value="com.lasho.mybatis.mapper.CodeMapper" />
+      <property name="mapperInterface" value="cn.kane.mybatis.mapper.CodeMapper" />
       <property name="sqlSessionFactory" ref="sessionFactory" /> 
     </bean> -->
 	

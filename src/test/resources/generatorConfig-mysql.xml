@@ -6,7 +6,7 @@
 	<context id="context1">
 		<!-- pagination plugin -->
 		<!-- <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin> -->
-		<!-- <plugin type="com.lasho.mybatis.PaginationMysqlPlugin" /> -->
+		<!-- <plugin type="cn.kane.mybatis.PaginationMysqlPlugin" /> -->
 		<commentGenerator>
 			<property name="suppressAllComments" value="false" />
 		</commentGenerator>
@@ -21,21 +21,21 @@
 
 		<!-- pagination -->
 		<!-- 
-		<javaModelGenerator targetPackage="com.lasho.mybatis.domain"
+		<javaModelGenerator targetPackage="cn.kane.mybatis.domain"
 			targetProject="myBatisDemo" />
-		<sqlMapGenerator targetPackage="com.lasho.mybatis.xmlmapper"
+		<sqlMapGenerator targetPackage="cn.kane.mybatis.xmlmapper"
 			targetProject="myBatisDemo" />
-		<javaClientGenerator targetPackage="com.lasho.mybatis.mapper"
+		<javaClientGenerator targetPackage="cn.kane.mybatis.mapper"
 			targetProject="myBatisDemo" type="XMLMAPPER" /> 
 		<table schema="" tableName="code" domainObjectName="Code"/>
 			-->
 		
 		<!-- un-pagination -->	
-		<javaModelGenerator targetPackage="com.lasho.mybatis.unpage"
+		<javaModelGenerator targetPackage="cn.kane.mybatis.unpage"
 			targetProject="myBatisDemo" />
-		<sqlMapGenerator targetPackage="com.lasho.mybatis.unpage"
+		<sqlMapGenerator targetPackage="cn.kane.mybatis.unpage"
 			targetProject="myBatisDemo" />
-		<javaClientGenerator targetPackage="com.lasho.mybatis.unpage"
+		<javaClientGenerator targetPackage="cn.kane.mybatis.unpage"
 			targetProject="myBatisDemo" type="XMLMAPPER" />
 		<table schema="" tableName="code" domainObjectName="Code"/>
 	</context>
